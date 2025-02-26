@@ -1,0 +1,46 @@
+{
+  "commands": {
+    "setup": {
+      "name": "setup",
+      "description": "Setup authentication channel on server",
+      "option_1_name": "role",
+      "option_1_description": "Set a role to give users when they get verified",
+      "option_2_name": "log",
+      "option_2_description": "Set a log for users usage",
+      "option_3_name": "language",
+      "option_3_description": "Set a display language"
+    }
+  },
+
+  "panel": {
+    "component_1": "Card ID",
+    "component_2": "Verify"
+  },
+
+  "card_id": {
+    "title": "Card ID : %{guild_name}",
+    "field_1_name": "Details",
+    "field_1_value": "・**Name** : %{user_name}\n・**ID** : %{user_id}\n・**Email** : %{user_email}",
+    "field_2_name": "Account by XYOS",
+    "field_2_value": "・**Updated** : <t:%{updated}:R>\n・**Verified** : <t:%{verified}:f>"
+  },
+
+  "log": {
+    "field_1_name": "Action : %{action}",
+    "field_1_value": "・**User** : <@%{user_id}>\n・**ID** : %{user_id}",
+    "field_2_name": "Timestamp",
+    "field_2_value": "・**Date** : <t:%{unix}:f>\n・**Unix** : %{unix}",
+    "footer": "Logger : Authentication・Latency : %{latency} second(s)"
+  },
+
+  "common": {
+    "wait": "**⏳ Please wait, your request is being processed...**",
+    "success": "**✅ Operation completed successfully.**",
+    "fail": "**❌ Operation failed: %{val}**",
+    "error_1": "The bot cannot send messages in this channel.",
+    "error_2": "The bot cannot assign the specified role.",
+    "error_3": "The bot cannot create a webhook.",
+    "error_4": "Unable to add to the database. Please try again.",
+    "error_5": "The bot cannot edit this message."
+  }
+}
